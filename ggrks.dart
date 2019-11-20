@@ -27,7 +27,7 @@ main(List<String> args) async {
 
   final browser = await puppeteer.launch(
     // MacにインストールされているChromeを使う。
-    executablePath:
+    executablePath: Platform.environment['PUPPETEER_EXECUTABLE_PATH'] ??
         '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
 
     // ブラウザ画面を表示しながら（ヘッドレスモードを無効にする）。
