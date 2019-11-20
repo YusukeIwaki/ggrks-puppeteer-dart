@@ -1,0 +1,4 @@
+name: puppeteer_play
+
+dependencies:
+  puppeteer: ^1.13.0
